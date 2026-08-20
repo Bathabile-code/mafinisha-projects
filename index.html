@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mafinisha Projects — Trusted Handyman & Home Services | Durban</title>
+<meta name="description" content="Mafinisha Projects — 5-star rated handyman and home maintenance in Durban (Mount Moriah). Repairs, installations, building and general handyman work. Fast, reliable, fully equipped. WhatsApp us for a free quote.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f172a;--body:#475569;--muted:#64748b;--bg:#ffffff;--soft:#f1f5f9;--brand:#0f766e;--brand-dark:#115e59;--brand-soft:#ccfbf1;--accent:#f59e0b;--line:#e2e8f0;--shadow:0 20px 50px -24px rgba(15,23,42,.22);--font:'Plus Jakarta Sans',system-ui,sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{line-height:1.12;font-weight:800;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 26px;border-radius:12px;font-weight:600;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;border:none;}
+.btn:hover{transform:translateY(-2px);}
+.btn-green{background:#25d366;color:#fff;box-shadow:0 10px 26px -10px rgba(37,211,102,.55);}
+.btn-green:hover{filter:brightness(1.04);}
+.btn-brand{background:var(--brand);color:#fff;box-shadow:0 10px 26px -10px rgba(15,118,110,.5);}
+.btn-brand:hover{background:var(--brand-dark);}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);}
+.btn-ghost:hover{background:rgba(255,255,255,.12);}
+.wa-glyph{width:1.15em;height:1.15em;fill:currentColor;vertical-align:-0.15em;}
+/* Nav */
+nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.12rem;}
+.brand img{height:38px;width:38px;object-fit:contain;border-radius:9px;}
+.nav-links{display:flex;gap:26px;font-weight:600;font-size:.95rem;color:var(--body);}
+.nav-links a:hover{color:var(--brand);}
+.nav-cta{display:flex;gap:10px;}
+/* Hero */
+.hero{position:relative;color:#fff;background:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);}
+.hero::before{content:"";position:absolute;inset:0;background:url('hero.jpg') center/cover no-repeat;opacity:.25;}
+.hero-in{position:relative;max-width:1120px;margin:0 auto;padding:96px 24px;}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 15px;border-radius:999px;font-size:.82rem;font-weight:600;letter-spacing:.3px;}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);margin:22px 0 18px;max-width:720px;}
+.hero p{font-size:1.18rem;color:#e2e8f0;max-width:600px;margin-bottom:30px;}
+.hero .stars{color:var(--accent);letter-spacing:2px;font-size:1.05rem;}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.15);}
+.stat{padding:26px;text-align:center;}
+.stat .num{font-size:1.9rem;font-weight:800;}
+.stat .lbl{font-size:.82rem;color:#cbd5e1;margin-top:4px;}
+/* Sections */
+section{padding:84px 0;}
+.sec-head{max-width:640px;margin-bottom:44px;}
+.sec-head .eyebrow{color:var(--brand);font-weight:700;font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase;}
+.sec-head h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin:10px 0 14px;}
+.sec-head p{color:var(--body);font-size:1.06rem;}
+/* Services grid */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.svc{background:var(--soft);border-radius:16px;padding:28px;border:1px solid var(--line);transition:transform .15s,box-shadow .15s;}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+.svc .ic{font-size:1.8rem;margin-bottom:14px;}
+.svc h3{font-size:1.08rem;margin-bottom:8px;}
+.svc p{font-size:.92rem;color:var(--body);}
+/* Why us */
+.why{background:var(--soft);}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.why-item{background:#fff;border-radius:16px;padding:26px;border:1px solid var(--line);}
+.why-item .ic{font-size:1.7rem;margin-bottom:12px;}
+.why-item h3{font-size:1.02rem;margin-bottom:7px;}
+.why-item p{font-size:.9rem;color:var(--body);}
+/* Reviews */
+.review-card{background:#fff;border-radius:16px;padding:28px;border:1px solid var(--line);box-shadow:var(--shadow);max-width:620px;margin:0 auto;}
+.review-card .stars{color:var(--accent);letter-spacing:2px;}
+.review-card blockquote{font-size:1.12rem;line-height:1.65;color:var(--ink);margin:14px 0 18px;font-style:italic;}
+.review-card .who{font-weight:700;font-size:.95rem;}
+.review-card .where{font-size:.85rem;color:var(--muted);}
+/* Contact */
+.contact{background:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);color:#fff;}
+.contact h2{color:#fff;}
+.contact p{color:#cbd5e1;}
+.contact-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+.contact .num{display:block;font-size:1.15rem;font-weight:700;color:#fff;margin-top:18px;}
+/* Footer */
+footer{padding:26px 0;text-align:center;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);}
+/* Floating WhatsApp */
+.fab{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);z-index:80;}
+.fab:hover{transform:scale(1.06);}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr);}.nav-links{display:none;}.hero-in{padding:64px 20px;}}
+</style>
+</head>
+<body>
+
+<!-- WhatsApp glyph sprite -->
+<svg style="display:none"><symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol></svg>
+
+<nav><div class="wrap nav-in">
+  <a class="brand" href="#top"><img src="logo.png" alt="Mafinisha Projects logo">Mafinisha Projects</a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-cta"><a class="btn btn-green" href="https://wa.me/27653053665?text=Hi%20Mafinisha%20Projects%2C%20I%20need%20a%20handyman%20quote"><svg class="wa-glyph"><use href="#wa"/></svg>Get a Quote</a></div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="hero-in">
+    <span class="badge"><span class="stars">★★★★★</span> 5.0 Rated · Durban</span>
+    <h1>Reliable handyman & home repairs done right, first time.</h1>
+    <p>From small fixes to full projects — Mafinisha Projects handles repairs, installations, building and maintenance across Durban. Honest pricing, quality work, no shortcuts.</p>
+    <div class="actions">
+      <a class="btn btn-green" href="https://wa.me/27653053665?text=Hi%20Mafinisha%20Projects%2C%20I%20need%20a%20handyman%20quote"><svg class="wa-glyph"><use href="#wa"/></svg>WhatsApp Us Now</a>
+      <a class="btn btn-ghost" href="tel:+27653053665">Call +27 65 305 3665</a>
+    </div>
+  </div>
+</header>
+
+<div class="stats" style="max-width:1120px;margin:0 auto;">
+  <div class="stat"><div class="num">5.0★</div><div class="lbl">Rated by customers</div></div>
+  <div class="stat"><div class="num">100%</div><div class="lbl">Satisfaction focus</div></div>
+  <div class="stat"><div class="num">Fast</div><div class="lbl">Quick turnaround</div></div>
+  <div class="stat"><div class="num">Durban</div><div class="lbl">Proudly local</div></div>
+</div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">What we do</span>
+    <h2>Handyman services for every job</h2>
+    <p>One trusted call for all your home maintenance and improvement needs.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc"><div class="ic">🔧</div><h3>General Repairs</h3><p>Fixing doors, locks, taps, tiles and more — done properly.</p></div>
+    <div class="svc"><div class="ic">🏗️</div><h3>Building & Renovation</h3><p>Small builds, alterations and home improvements.</p></div>
+    <div class="svc"><div class="ic">🔌</div><h3>Installations</h3><p>Fixtures, fittings, shelves, curtains and appliances.</p></div>
+    <div class="svc"><div class="ic">🧰</div><h3>Home Maintenance</h3><p>Ongoing care to keep your home in great shape.</p></div>
+    <div class="svc"><div class="ic">🛠️</div><h3>Custom Work</h3><p>Tell us the job — if it can be fixed or built, we'll do it.</p></div>
+    <div class="svc"><div class="ic">⚡</div><h3>Fast Response</h3><p>Quick quotes and reliable scheduling when you need us.</p></div>
+  </div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Why choose us</span>
+    <h2>The handyman Durban trusts</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-item"><div class="ic">⭐</div><h3>5-Star Rated</h3><p>Backed by genuine 5.0★ customer reviews.</p></div>
+    <div class="why-item"><div class="ic">🤝</div><h3>Honest Pricing</h3><p>Clear quote before we start. No surprises.</p></div>
+    <div class="why-item"><div class="ic">⏱️</div><h3>Reliable & Punctual</h3><p>We show up when we say we will.</p></div>
+    <div class="why-item"><div class="ic">✅</div><h3>Quality First</h3><p>Work done right the first time.</p></div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Reviews</span>
+    <h2>Rated 5.0★ by our customers</h2>
+  </div>
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <blockquote>"Reliable, professional and does quality work. Highly recommend Mafinisha Projects for any job around the house."</blockquote>
+    <div class="who">Mafinisha Projects Customer</div>
+    <div class="where">Mount Moriah, Durban</div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="sec-head" style="margin-bottom:0;">
+    <span class="eyebrow" style="color:#5eead4;">Get in touch</span>
+    <h2>Need a hand? Let's talk.</h2>
+    <p>Send a quick WhatsApp or give us a call — we'll come back with a clear quote.</p>
+    <div class="contact-actions">
+      <a class="btn btn-green" href="https://wa.me/27653053665?text=Hi%20Mafinisha%20Projects%2C%20I%20need%20a%20handyman%20quote"><svg class="wa-glyph"><use href="#wa"/></svg>WhatsApp Us</a>
+      <a class="btn btn-ghost" href="tel:+27653053665">Call +27 65 305 3665</a>
+    </div>
+    <span class="num">📞 +27 65 305 3665 · Serving Durban & surrounds</span>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Mafinisha Projects · Proudly serving Durban, Mount Moriah & surrounds</div></footer>
+
+<a class="fab" href="https://wa.me/27653053665?text=Hi%20Mafinisha%20Projects%2C%20I%20need%20a%20handyman%20quote"><svg class="wa-glyph" style="width:30px;height:30px;"><use href="#wa"/></svg></a>
+
+</body>
+</html>
